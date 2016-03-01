@@ -1,0 +1,15 @@
+body{
+	background-image: url(../images/eggsurf.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: contain;
+}
+.List{
+	min-width: 500px;
+	height: 200px;
+	position: relative;
+}
+.BaconBuyer{
+	margin-top: 50px;
+
+}
