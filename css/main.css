@@ -4,12 +4,24 @@ body{
 	background-attachment: fixed; 
 	background-size: contain;
 }
-.List{
-	min-width: 500px;
-	height: 200px;
-	position: relative;
+ul{
+	list-style: none;
 }
-.BaconBuyer{
-	margin-top: 50px;
-
+li{
+	list-style: none;
+}
+.ShoppingList{
+	font-family: 'Droid Sans', sans-serif;
+	margin-top:50px;
+	margin-left:50px;
+}
+.TextInput{
+	font-family: 'Shadows Into Light', cursive;
+}
+.box{
+	background-image: url('../images/box.png');
+	background-repeat: no-repeat;
+}
+.checkedbox{
+	background-image: url('../images/checkedbox.png');
 }
