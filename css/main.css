@@ -12,10 +12,8 @@ ul{
 li{
 	list-style: none;
 }
-.item{
-}
-.itemstrike{
-	display:none;
+.strikethrough {
+	text-decoration: line-through;
 }
 .ShoppingList{
 	font-family: 'Droid Sans', sans-serif;

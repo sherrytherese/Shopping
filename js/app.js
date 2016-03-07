@@ -12,7 +12,7 @@ $(document).ready(function() {
 	});
 
 	$('.List').on('click', '.checkbox', function(){
-		$(this).parent("ul").css("text-decoration","line-through");
+		$(this).parent("ul").toggleClass('strikethrough');
 	});
 
 
