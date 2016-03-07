@@ -4,13 +4,16 @@ $(document).ready(function() {
 
 	addItem.click(function() {
 		var toAdd = $('.TextInput').val();
-		$('.ShoppingList').append('<li><input type = "checkbox">' + toAdd +'<button class = "remove">Remove Item </button></li>');
+		$('.List').append('<ul><input type = "checkbox" class = "checkbox">' + toAdd +'<button class = "remove">Remove Item </button></ul>');
 	});
 
-	$('.ShoppingList').on('click', '.remove', function(){
-		$(this).parent("li").remove();
+	$('.List').on('click', '.remove', function(){
+		$(this).parent("ul").remove();
 	});
 
+	$('.List').on('click', '.checkbox', function(){
+		$(this).parent("ul").css("text-decoration","line-through");
+	});
 
 
 	//$('.ButtonAdd').click(function() {
