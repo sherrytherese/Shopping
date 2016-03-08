@@ -2,9 +2,10 @@ body{
 	background-image: url(../images/baconandeggs.png);
 	background-repeat: no-repeat;
 	background-size: 800px 600px;
+	background-position: left 50px top 5px;
 	margin-top:50px;
 	margin-left: 50px;
-	background-color: #78C4E8;
+	background-color: #77C2E6;
 }
 ul{
 	list-style: none;
@@ -14,6 +15,19 @@ li{
 }
 .strikethrough {
 	text-decoration: line-through;
+}
+.remove {
+	background-color: #5997B4;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.checkbox {
+	margin-right: 20px;
 }
 .ShoppingList{
 	font-family: 'Droid Sans', sans-serif;

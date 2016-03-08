@@ -1,11 +1,24 @@
 
 $(document).ready(function() {
-		var addItem = $('.additem');
+		//var addItem = $('.additem');
 
-	addItem.click(function() {
+	$('.additem').click(function() {
 		var toAdd = $('.TextInput').val();
 		$('.List').append('<ul><input type = "checkbox" class = "checkbox">' + toAdd +'<button class = "remove">Remove Item </button></ul>');
+		$('.TextInput').val(' ');
 	});
+
+	$('.TextInput').on('keypress', function(e) {
+		if (e.which ==13) {
+			var toAdd = $('.TextInput').val();
+			$('.List').append('<ul><input type = "checkbox" class = "checkbox">' + toAdd +'<button class = "remove">Remove Item </button></ul>');
+			$('.TextInput').val(' ');	
+		}
+	});
+
+	//$('.TextInput').on('click', '.additem',function(){
+	//	$('.TextInput').val('');
+	//});
 
 	$('.List').on('click', '.remove', function(){
 		$(this).parent("ul").remove();
